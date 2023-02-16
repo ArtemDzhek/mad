@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/components.css">
+   <link rel="stylesheet" href="./css/components-input.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <title>mad</title>
+</head>
+
+<body>
+   <header class="heaader">
+      <div class="heaader__flex conteiner">
+         <div class="burger">
+            <input class="burger__input" id="burger" type="checkbox">
+            <label class="burger__label" for="burger">
+               <span class="line-1"></span>
+               <span class="line-2"></span>
+               <span class="line-3"></span>
+            </label>
+            <div class="logo__img">
+               <a href="./index.html">
+                  <img src="./img/logo.png" alt="">
+               </a>
+            </div>
+            <div class="burger__search">
+               <label for="burger">
+                  <img src="./icons/search.png" alt="">
+               </label>
+               <a href="./index-card.html">
+                  <img src="./icons/Vector2.svg" alt="">
+               </a>
+            </div>
+            <div class="burger__nav">
+               <ul class="burger__nav-list">
+                  <li class="burger__search-burger">
+                     <input type="text" id="search-burger" placeholder="Type something...">
+                     <label class="search-burger-style" for="search-burger">Find</label>
+                  </li>
+                  <li class="burger__nav-href"><a class="active-choice" href="./index.html">TREnding</a></li>
+                  <li class="burger__nav-href"><a class="active-choice" href="./index-card.html">catalog</a></li>
+                  <li class="burger__nav-href"><a class="active-choice" href="./index-shop.html">NEW</a></li>
+                  <li class="burger__nav-href"><a href="#">Sale</a></li>
+                  <li class="burger__nav-href"><a href="#">Brands</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="logo__img">
+            <a href="./index.html">
+               <img src="./img/logo.png" alt="">
+            </a>
+         </div>
+         <div class="heaader__block flex-mod-fcc">
+            <nav class="heaader__nav burger__wraper">
+               <ul class="flex-mod-fcc text-list">
+                  <li><a class="active-choice" href="./index.html">home</a></li>
+                  <li><a class="active-choice" href="./index-card.html">Shop</a></li>
+                  <li><a class="active-choice" href="./index-shop.html">blog</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">contact us</a></li>
+               </ul>
+            </nav>
+            <div class="searh-input-app text-list flex-mod-fcc">
+               <input id="check-search" type="checkbox">
+               <label class="searh-input-app__lable" for="check-search">search</label>
+               <div class="searh-input-app__wrapper">
+                  <input class="searh-input-app__input" placeholder="search " id="search-heder" type="text">
+               </div>
+            </div>
+         </div>
+         <div class="heaader__block-shop flex-mod-fcc">
+            <div class="heaader__account flex-mod-fcc text-list">
+               <a href="#">SIGN IN</a>
+               <a href="#">CREATE AN ACCOUNT</a>
+            </div>
+            <div class="heaader__shopping text-list flex-mod-fcc">
+               <a href="#">
+                  <img src="./icons/Vector1.svg" alt="">
+               </a>
+               <a href="#"> <span>Shopping Cart</span>
+                  <span>0,00 EUR</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <article class="header-card conteiner">
+         <span class="header-card__crumbs">
+            Home / Create New Customer Account
+         </span>
+         <span class="header-card__h2">
+            Shopping Cart
+         </span>
+      </article>
+      <article class="apply conteiner">
+         <span class="apply__discount">
+            Apply Discount Code
+         </span>
+         <form class="apply__form" action="#">
+            <input type="text" id="apply" placeholder="Enter discount code">
+            <label class="btn-form" for="apply">Apply</label>
+         </form>
+         <span class="apply__tax">Estimate Shipping and Tax</span>
+         <div class="apply__block block-flex">
+            <div class="block-flex">
+               <div class="block-flex__left">
+                  <span class="block-flex__grey">Subtotal</span>
+                  <span class="block-flex__grey">Tax</span>
+                  <span class="block-flex__bold">Order Total</span>
+               </div>
+               <div class="block-flex__right">
+                  <span class="block-flex__bold">120.00 EUR</span>
+                  <span class="block-flex__grey">0.00 EUR</span>
+                  <span class="block-flex__bold">120.00 EUR</span>
+               </div>
+            </div>
+            <span class="block-flex__text">Check Out with Multiple Addresses</span>
+            <a class="btn-card" href="#">proceed to checkout</a>
+         </div>
+
+      </article>
+      <article class="card__product conteiner">
+         <div class="card__block">
+            <div class="card__flex">
+               <div class="card__img">
+                  <img src="./img-shop/rectangle2.webp" alt="">
+               </div>
+               <div class="card__text">
+                  <span class="card__size">Angels malu zip jeans slim black used</span>
+                  <p class="card__grey">Size: <span class="card__text-bold">W31/L34</span></p>
+                  <p class="card__grey">Art.No.: <span class="card__text-bold">434536465</span></p>
+                  <span class="card__grey color-choise-card">Color:<span class="card-color-mod-blue"></span></span>
+               </div>
+               <div class="card__icons">
+                  <span class="card__cross"></span>
+                  <span class="card__record"></span>
+               </div>
+            </div>
+            <div class="card__footer">
+               <div class="card__block-flex">
+                  <span class="card__quantity">Quantity</span>
+                  <div class="card__pull">1</div>
+               </div>
+               <p class="card__footer-text">Price:<span class="card__text-bold">90,00 EUR</span></p>
+            </div>
+         </div>
+         <div class="card__block">
+            <div class="card__flex">
+               <div class="card__img">
+                  <img src="./img-shop/rectangle5.webp" alt="">
+               </div>
+               <div class="card__text">
+                  <span class="card__size">Angels malu zip jeans slim black used</span>
+                  <p class="card__grey">Size: <span class="card__text-bold">W31/L34</span></p>
+                  <p class="card__grey">Art.No.: <span class="card__text-bold">434536465</span></p>
+                  <div class="card__grey color-choise-card ">Color: <span class="card-color-mod-red"></span></div>
+               </div>
+               <div class="card__icons">
+                  <span class="card__cross"></span>
+                  <span class="card__record"></span>
+               </div>
+            </div>
+            <div class="card__footer">
+               <div class="card__block-flex">
+                  <span class="card__quantity">Quantity</span>
+                  <div class="card__pull">1</div>
+               </div>
+               <p class="card__footer-text">Price:<span class="card__text-bold">90,00 EUR</span></p>
+            </div>
+         </div>
+      </article>
+      <article class="contry-blokc conteiner">
+         <div class="contry-blokc__start">
+            <input type="checkbox" id="oupen-contry">
+            <label for="oupen-contry" class="oupen-contry__text">Estimate Shipping and Tax</label>
+            <div class="contry-blokc__input-block-wrapper">
+               <span class="contry-blokc__text-2">Enter your destination to get a shipping estimate.</span>
+               <span class="contry-h2">Country</span>
+               <div class="country-select">
+                  <input name="test1" type="radio" id="country-option">
+                  <label for="country-option" class="country-top"></label>
+                  <div class="country__wrapper">
+                     <input name="test1" type="radio" id="country-1-1">
+                     <label for="country-1-1" class="country-option">Poland</label>
+                     <input name="test1" type="radio" id="country-1-2">
+                     <label for="country-1-2" class="country-option">France</label>
+                     <input name="test1" type="radio" id="country-1-3" checked />
+                     <label for="country-1-3" class="country-option">United Kingdom</label>
+                     <input name="test1" type="radio" id="country-1-4">
+                     <label for="country-1-4" class="country-option">Germany</label>
+                  </div>
+               </div>
+               <div class="state-blokc__state-wrapper">
+                  <span class="state-h2">State/Province</span>
+                  <div class="state-select">
+                     <input class="state-select__input" type="text" id="state-text"
+                        placeholder="Please select a region, state or province.">
+                  </div>
+               </div>
+               <div class="postal-blokc__postal-wrapper">
+                  <span class="postal-h2">State/Province</span>
+                  <div class="postal-select">
+                     <input class="postal-select__input" type="text" id="postal-text">
+                  </div>
+               </div>
+               <div class="way">
+                  <div class="way__flex">
+                     <div class="way__flat">
+                        <span class="way__text">Flat Rate</span>
+                        <input name="way" type="radio" id="flat-rate">
+                        <label class="way__style" for="flat-rate">Fixed 5.00 EUR</label>
+                     </div>
+                     <div class="way__best">
+                        <span class="way__text">Best Way</span>
+                        <input name="way" type="radio" id="flat-rate-best">
+                        <label class="way__style" for="flat-rate-best">Table Rate 10.00 EUR</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </article>
+      <article class="apply conteiner">
+         <span class="apply__discount">
+            Apply Discount Code
+         </span>
+         <form class="apply__form" action="#">
+            <input type="text" id="apply" placeholder="Enter discount code">
+            <label class="btn-form" for="apply">Apply</label>
+         </form>
+         <span class="apply__tax">Estimate Shipping and Tax</span>
+         <div class="apply__block block-flex">
+            <div class="block-flex">
+               <div class="block-flex__left">
+                  <span class="block-flex__grey">Subtotal</span>
+                  <span class="block-flex__grey">Tax</span>
+                  <span class="block-flex__bold">Order Total</span>
+               </div>
+               <div class="block-flex__right">
+                  <span class="block-flex__bold">120.00 EUR</span>
+                  <span class="block-flex__grey">0.00 EUR</span>
+                  <span class="block-flex__bold">120.00 EUR</span>
+               </div>
+            </div>
+            <span class="block-flex__text">Check Out with Multiple Addresses</span>
+            <a class="btn-card" href="#">proceed to checkout</a>
+         </div>
+
+      </article>
+      <section class="blue">
+         <div class="blue__flex">
+            <span class="blue__info">Duties and Taxes Guaranteed</span>
+            <span class="blue__info">Free Express Shipping</span>
+            <span class="blue__info">Customer Love</span>
+            <span class="blue__info">Easy Returns</span>
+            <span class="blue__info">Secure Payment</span>
+         </div>
+      </section>
+
+   </main>
+   <footer class="footer">
+
+      <div class="footer__flex conteiner">
+         <div class="logo__img">
+            <a href="#">
+               <img src="./img/logo.png" alt="">
+            </a>
+         </div>
+         <div class="block-footer-mob">
+            <input class="" type="checkbox" id="features">
+            <label class="desc label-footer" for="features">
+               <span class="desc">features</span>
+            </label>
+            <div class="label-footer__href-features">
+               <a class="input-href" href="#">men</a>
+               <a class="input-href" href="#">Women</a>
+               <a class="input-href" href="#">boys</a>
+               <a class="input-href" href="#">girls</a>
+               <a class="input-href" href="#">new arrivals</a>
+               <a class="input-href" href="#">shoes</a>
+               <a class="input-href" href="#">cothes</a>
+               <a class="input-href" href="#">accessories</a>
+            </div>
+
+            <input class="" type="checkbox" id="Menu">
+            <label class="desc label-footer" for="Menu">
+               <span class="desc">Menu</span>
+            </label>
+            <div class="label-footer__href-footer">
+               <a class="input-href" href="#">About us</a>
+               <a class="input-href" href="#">contact us</a>
+               <a class="input-href" href="#">my account</a>
+               <a class="input-href" href="#">orders history</a>
+               <a class="input-href" href="#">MY WISHLIST</a>
+               <a class="input-href" href="#">BLOG LOGIN</a>
+            </div>
+            <input class="" type="checkbox" id="contact">
+            <label class="desc label-footer" for="contact">
+               <span class="desc">contact us</span>
+            </label>
+            <div class="label-footer__href-contact">
+               <span class="">Address:</span>
+               <span class="">123 STREET NAME, CITY, ENGLAND</span>
+               <span class="">Phone:</span>
+               <span class="">(123) 456-7890</span>
+               <span class="">email:</span>
+               <span class="">MAIL@EXAMPLE.COM</span>
+               <span class="">working days/hours</span>
+               <span class="">MON - SUN / 9:00AM - 8:00PM</span>
+            </div>
+            <input class="" type="checkbox" id="follow">
+            <label class="desc label-footer" for="follow">
+               <span class="desc">follow</span>
+            </label>
+            <div class="label-footer__href-follow">
+               <a href="#"><img src="./icons/facebook.png" alt=""> <span>FACEBOOK</span></a>
+               <a href="#"><img src="./icons/twitter.png" alt=""> <span>TWITTER</span></a>
+               <a href="#"><img src="./icons/instagram.png" alt=""> <span>INSTAGRAM</span></a>
+            </div>
+            <div class="label-footer__href-email">
+               <span class="desc">join us</span>
+               <span class="block-input-mail__span">Subscribe to our newsletters</span>
+               <form class="block-input-mail__imput imput" action="#">
+                  <input class="imput__email" name="email" id="email" type="email" placeholder="Email Address">
+                  <!-- <input id="email-btn" for="email-btn" type="button"> -->
+                  <label for="email" class="imput__button-footer">Subscribe!</label>
+               </form>
+            </div>
+         </div>
+         <div class="footer__features-block features-block">
+            <span class="desc">features</span>
+            <a href="#">men</a>
+            <a href="#">Women</a>
+            <a href="#">boys</a>
+            <a href="#">girls</a>
+            <a href="#">new arrivals</a>
+            <a href="#">shoes</a>
+            <a href="#">cothes</a>
+            <a href="#">accessories</a>
+         </div>
+         <div class="footer__block-about block-about">
+            <span class="desc">Menu</span>
+            <a href="#">About us</a>
+            <a href="#">contact us</a>
+            <a href="#">my account</a>
+            <a href="#">orders history</a>
+            <a href="#">MY WISHLIST</a>
+            <a href="#">BLOG LOGIN</a>
+         </div>
+         <div class="footer__block-contact block-contact">
+            <span class="desc">contact us</span>
+            <span class="">Address:</span>
+            <span class="">123 STREET NAME, CITY, ENGLAND</span>
+            <span class="">Phone:</span>
+            <span class="">(123) 456-7890</span>
+            <span class="">email:</span>
+            <span class="">MAIL@EXAMPLE.COM</span>
+            <span class="">working days/hours</span>
+            <span class="">MON - SUN / 9:00AM - 8:00PM</span>
+         </div>
+         <div class="footer__block-follow block-follow">
+            <span class="desc">follow</span>
+            <a href="#"><img src="./icons/facebook.png" alt=""> <span>FACEBOOK</span></a>
+            <a href="#"><img src="./icons/twitter.png" alt=""> <span>TWITTER</span></a>
+            <a href="#"><img src="./icons/instagram.png" alt=""> <span>INSTAGRAM</span></a>
+         </div>
+         <div class="footer__block-input-mail block-input-mail">
+            <span class="desc">join us</span>
+            <span class="block-input-mail__span">Subscribe to our newsletters</span>
+            <form class="block-input-mail__imput imput" action="#">
+               <input class="imput__email" name="email" id="email" type="email" placeholder="Email Address">
+               <!-- <input id="email-btn" for="email-btn" type="button"> -->
+               <label for="email" class="imput__button-footer">Subscribe!</label>
+            </form>
+         </div>
+      </div>
+      <div class="footer__copyright copyright conteiner">
+         <span class="copyright__text">© 2019. Crisp theme Developed by Belvg</span>
+      </div>
+   </footer>
+</body>
+
+</html>

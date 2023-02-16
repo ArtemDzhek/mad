@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/components.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/components-input.css">
+
+   <link rel="stylesheet" href="./input-min-js/nouislider.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <title>mad</title>
+</head>
+
+<body>
+   <header class="heaader">
+      <div class="heaader__flex conteiner">
+         <div class="burger">
+            <input class="burger__input" id="burger" type="checkbox">
+            <label class="burger__label" for="burger">
+               <span class="line-1"></span>
+               <span class="line-2"></span>
+               <span class="line-3"></span>
+            </label>
+            <div class="logo__img">
+               <a href="./index.html">
+                  <img src="./img/logo.png" alt="">
+               </a>
+            </div>
+            <div class="burger__search">
+               <label for="burger">
+                  <img src="./icons/search.png" alt="">
+               </label>
+               <a href="./index-card.html">
+                  <img src="./icons/Vector2.svg" alt="">
+               </a>
+            </div>
+            <div class="burger__nav">
+               <ul class="burger__nav-list">
+                  <li class="burger__search-burger">
+                     <input type="text" id="search-burger" placeholder="Type something...">
+                     <label class="search-burger-style" for="search-burger">Find</label>
+                  </li>
+                  <li class="burger__nav-href"><a class="active-choice" href="./index.html">TREnding</a></li>
+                  <li class="burger__nav-href"><a class="active-choice" href="./index-card.html">catalog</a></li>
+                  <li class="burger__nav-href"><a class="active-choice" href="./index-shop.html">NEW</a></li>
+                  <li class="burger__nav-href"><a>Sale</a></li>
+                  <li class="burger__nav-href"><a href="#">Brands</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="logo__img">
+            <a href="./index.html">
+               <img src="./img/logo.png" alt="">
+            </a>
+         </div>
+         <div class="heaader__block flex-mod-fcc">
+            <nav class="heaader__nav burger__wraper">
+               <ul class="flex-mod-fcc text-list">
+                  <li><a class="active-choice" href="./index.html">home</a></li>
+                  <li><a class="active-choice" href="./index-shop.html">Shop</a></li>
+                  <li><a class="active-choice" href="./index-card.html">blog</a></li>
+                  <li><a href="#">Sale</a></li>
+                  <li><a href="#">contact us</a></li>
+               </ul>
+            </nav>
+            <div class="searh-input-app text-list flex-mod-fcc">
+               <input id="check-search" type="checkbox">
+               <label class="searh-input-app__lable" for="check-search">search</label>
+               <div class="searh-input-app__wrapper">
+                  <input class="searh-input-app__input" placeholder="search " id="search-heder" type="text">
+               </div>
+            </div>
+         </div>
+         <div class="heaader__block-shop flex-mod-fcc">
+            <div class="heaader__account flex-mod-fcc text-list">
+               <a href="#">SIGN IN</a>
+               <a href="#">CREATE AN ACCOUNT</a>
+            </div>
+            <div class="heaader__shopping text-list flex-mod-fcc">
+               <a href="#">
+                  <img src="./icons/Vector1.svg" alt="">
+               </a>
+               <a href="./index-card.html"> <span>Shopping Cart</span>
+                  <span>0,00 EUR</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <article class="baner-limits conteiner">
+         <div class="baner-limits__flex">
+            <div class="banner-big-blokc">
+               <p class="banner-big-blokc__p">
+                  <span class="banner-big-blokc__bold">shoping without limits.</span>
+               </p>
+               <span class="banner-big-blokc__grey">You can choose the best option for you, and it does not matter
+                  whether
+                  you are in Prague or San Francisco. We will deliver your purchase anywhere!</span>
+
+               <a class="btn-white" href="#">shop now</a>
+            </div>
+         </div>
+         </div>
+      </article>
+
+      <div class="shop-content conteiner">
+         <sidebar class="shop-content__choise-dropdown ">
+            <div class="choise">
+               <input class="input-none" id="choise" type="checkbox">
+               <label class="dropdown" name="choise" for="choise">
+                  <span class="color-choise ">brand</span>
+               </label>
+               <div class="choise__wrapper">
+                  <form class="choise__brand" action="#">
+                     <div class="brends-style">
+                        <input class="input-none" id="open-state" type="checkbox">
+                        <label class="checked" for="open-state">State</label>
+                     </div>
+                     <div class="brends-style">
+                        <input class="input-none" id="open-cooper" type="checkbox">
+                        <label class="checked" for="open-cooper">Cooper</label>
+                     </div>
+                     <div class="brends-style">
+                        <input class="input-none" id="open-bardot" type="checkbox" checked />
+                        <label class="checked" for="open-bardot">bardot</label>
+                     </div>
+                     <div class="brends-style">
+                        <input class="input-none" id="open-alfani" type="checkbox">
+                        <label class="checked" for="open-alfani">alfani</label>
+                     </div>
+                     <div class="brends-style">
+                        <input class="input-none" id="open-cece" type="checkbox">
+                        <label class="checked" for="open-cece">cece</label>
+                     </div>
+                     <div class="brends-style">
+                        <input class="input-none" id="open-ricco" type="checkbox">
+                        <label class="checked" for="open-ricco">donna ricco</label>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+            <div class="size">
+               <input class="input-none" id="size-open" type="checkbox">
+               <label class="size-label" name="choise" for="size-open">
+                  <span class="href-leble-style">Size (Inches)</span>
+               </label>
+               <div class="size__wrapper">
+                  <form class="size__brand" action="#">
+                     <div class="size-number">
+                        <input class="input-none" id="size-osfa" type="checkbox">
+                        <label class="size-checked" for="size-osfa">osfa</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w26" type="checkbox">
+                        <label class="size-checked" for="size-w26">w26</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w27" type="checkbox">
+                        <label class="size-checked" for="size-w27">w27</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w28" type="checkbox" checked />
+                        <label class="size-checked" for="size-w28">w28</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w29" type="checkbox">
+                        <label class="size-checked" for="size-w29">w29</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w30" type="checkbox">
+                        <label class="size-checked" for="size-w30">w30</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w31" type="checkbox">
+                        <label class="size-checked" for="size-w31">w31</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w32" type="checkbox">
+                        <label class="size-checked" for="size-w32">w32</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w33" type="checkbox">
+                        <label class="size-checked" for="size-w33">w33</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w34" type="checkbox">
+                        <label class="size-checked" for="size-w34">w34</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w35" type="checkbox">
+                        <label class="size-checked" for="size-w35">w35</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w36" type="checkbox">
+                        <label class="size-checked" for="size-w36">w36</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w38" type="checkbox">
+                        <label class="size-checked" for="size-w38">w38</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w40" type="checkbox">
+                        <label class="size-checked" for="size-w40">w40</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w42" type="checkbox">
+                        <label class="size-checked" for="size-w42">w42</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w44" type="checkbox">
+                        <label class="size-checked" for="size-w44">w44</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w46" type="checkbox">
+                        <label class="size-checked" for="size-w46">w46</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w48" type="checkbox" checked />
+                        <label class="size-checked" for="size-w48">w48</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w50" type="checkbox">
+                        <label class="size-checked" for="size-w50">w50</label>
+                     </div>
+                     <div class="size-number">
+                        <input class="input-none" id="size-w52" type="checkbox">
+                        <label class="size-checked" for="size-w52">w52</label>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+            <div class="dress">
+               <input class="input-none" id="dress" type="checkbox">
+               <label class="dress-length" name="choise" for="dress">
+                  <span class="href-leble-style">Dress length</span>
+               </label>
+               <div class="dress__wrapper">
+                  <form class="choise__brand" action="#">
+                     <div class="dress-style">
+                        <input class="input-none" id="open-dress-state" type="checkbox">
+                        <label class="checked" for="open-dress-state">State</label>
+                     </div>
+                     <div class="dress-style">
+                        <input class="input-none" id="open-dress-knee" type="checkbox">
+                        <label class="checked" for="open-dress-knee">knee length</label>
+                     </div>
+                     <div class="dress-style">
+                        <input class="input-none" id="open-dress-hight" type="checkbox" checked />
+                        <label class="checked" for="open-dress-hight">hight low</label>
+                     </div>
+                     <div class="dress-style">
+                        <input class="input-none" id="open-dress-long" type="checkbox">
+                        <label class="checked" for="open-dress-long">long</label>
+                     </div>
+                     <div class="dress-style">
+                        <input class="input-none" id="open-dress-midi" type="checkbox">
+                        <label class="checked" for="open-dress-midi">midi</label>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="color">
+               <input class="input-none" id="color" type="checkbox">
+               <label class="color-length" name="choise" for="color">
+                  <span class="color-choise">Color</span>
+               </label>
+               <div class="color__wrapper">
+                  <form class="color__brand" action="#">
+                     <div class="color-style">
+                        <input class="input-none" id="background-2D" type="checkbox">
+                        <label class="color-checked" for="background-2D"></label>
+                     </div>
+                     <div class="color-style-1">
+                        <input class="input-none" id="background-E2" type="checkbox">
+                        <label class="color-checked" for="background-E2"></label>
+                     </div>
+                     <div class="color-style-2">
+                        <input class="input-none" id="background-6A" type="checkbox">
+                        <label class="color-checked" for="background-6A"></label>
+                     </div>
+                     <div class="color-style-3">
+                        <input class="input-none" id="background-4A" type="checkbox">
+                        <label class="color-checked" for="background-4A"></label>
+                     </div>
+                     <div class="color-style-4">
+                        <input class="input-none" id="background-89" type="checkbox">
+                        <label class="color-checked" for="background-89"></label>
+                     </div>
+                     <div class="color-style-5">
+                        <input class="input-none" id="background-B6" type="checkbox" checked />
+                        <label class="color-checked" for="background-B6"></label>
+                     </div>
+                     <div class="color-style-6">
+                        <input class="input-none" id="background-A7" type="checkbox">
+                        <label class="color-checked" for="background-A7"></label>
+                     </div>
+                     <div class="color-style-7">
+                        <input class="input-none" id="background-34" type="checkbox">
+                        <label class="color-checked" for="background-34"></label>
+                     </div>
+                     <div class="color-style-8">
+                        <input class="input-none" id="background-3E" type="checkbox">
+                        <label class="color-checked" for="background-3E"></label>
+                     </div>
+                     <div class="color-style-9">
+                        <input class="input-none" id="background-3C" type="checkbox">
+                        <label class="color-checked" for="background-3C"></label>
+                     </div>
+                     <div class="color-style-10">
+                        <input class="input-none" id="background-B1" type="checkbox">
+                        <label class="color-checked" for="background-B1"></label>
+                     </div>
+                     <div class="color-style-11">
+                        <input class="input-none" id="background-FA7" type="checkbox">
+                        <label class="color-checked" for="background-FA7"></label>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+            <div class="prise">
+               <input class="input-none" id="prise" type="checkbox">
+               <label class="prise-length" name="choise" for="prise">
+                  <span class="href-leble-style">Price Range</span>
+               </label>
+               <div class="input-wrapper">
+                  <div class="slider-wrapper " id="range-slider">
+                     <label class="filtres-pris__leble-1" min="0" max="500" for="input-0">
+
+                        <input type="number" class="filtres-pris__input" placeholder="500" id="input-0">
+                        <span class="filters-pris__text">EUR</span>
+                     </label>
+
+                     <label class="filtres-pris__leble-2" min="0" max="500" for="input-1">
+
+                        <input type="number" class="filtres-pris__input" placeholder="500" id="input-1">
+                        <span class="filters-pris__text">EUR</span>
+                     </label>
+                  </div>
+                  <label class="input-none button-btn" for="button-prise">
+                     <input id="button-prise" type="button">
+                     <span>Apply</span>
+                  </label>
+               </div>
+            </div>
+            <div class="dress-lengt">
+               <input class="input-none" id="lengt" type="checkbox">
+               <label class="lengt-length" name="choise" for="lengt">
+                  <span class="href-leble-style">Dress Length</span>
+               </label>
+               <div class="dress-lengt__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo blanditiis dignissimos dolor quidem quos
+                  asperiores fugit cupiditate excepturi explicabo minima, voluptatibus labore totam. Incidunt rem fuga
+                  dicta aperiam doloribus mollitia.
+               </div>
+            </div>
+            <div class="about-dresses">
+               <span class="href-leble-style">About Dresses</span>
+               <div class="about-dresses__text">
+                  Every day we’re gonna be dropping the latest trends to help you nail every Summer sitch. Whether it’s
+                  a graduation, your mate's wedding, or just a cute day at the races with the gals, our occasion dresses
+                  have got you covered. Not looking for something fancy? No stress. We’ve got day dresses for days (aka
+                  bodycon dresses, t-shirt dresses, oversized shirt dresses).
+               </div>
+            </div>
+         </sidebar>
+
+         <article class="blokc-shop-list">
+            <div class="blokc-shop-list__flex">
+               <div class="blokc-shop-list__input-block">
+                  <div class="a-dropdown">
+                     <select name="choice" id="choice" class="a-dropdown__select">
+                        <option value="Value 1">price (High to low)</option>
+                        <option value="Value 2">Lorem, ipsum.</option>
+                        <option value="Value 3">Lorem, ipsum.</option>
+                        <option value="Value 4">Lorem, ipsum.</option>
+                     </select>
+                     <svg viewBox="0 0 12 12" class="a-dropdown__arrow icon icon-chevron">
+                     </svg>
+                  </div>
+
+                  <div class="select-1">
+                     <input class="selectopt" name="test" type="radio" id="opt-option">
+                     <label for="opt-option" class="size-top"></label>
+                     <div class="select-1__wrapper">
+                        <input class="selectopt" name="test" type="radio" id="opt2">
+                        <label for="opt2" class="option-1">12</label>
+                        <input class="selectopt" name="test" type="radio" id="opt3">
+                        <label for="opt3" class="option-1">24</label>
+                        <input class="selectopt" name="test" type="radio" id="opt4" checked />
+                        <label for="opt4" class="option-1">48</label>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="blokc-shop-list__flex-shop">
+
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle1.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop24426A" type="radio">
+                           <label class="product-card__color-choice-1" for="color-shop24426A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop18574A" type="radio" checked />
+                           <label class="product-card__color-choice-2" for="color-shop18574A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop666689" type="radio">
+                           <label class="product-card__color-choice-3" for="color-shop666689"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle2.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop88ABCB" type="radio">
+                           <label class="product-card__color-choice-4" for="color-shop88ABCB"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopFACBCE" type="radio" checked />
+                           <label class="product-card__color-choice-5" for="color-shopFACBCE"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopA75E5D" type="radio">
+                           <label class="product-card__color-choice-6" for="color-shopA75E5D"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle3.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopC2BEB6" type="radio">
+                           <label class="product-card__color-choice-7" for="color-shopC2BEB6"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-24426A" type="radio" checked />
+                           <label class="product-card__color-choice-8" for="color-shop-24426A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopCBA13E" type="radio">
+                           <label class="product-card__color-choice-9" for="color-shopCBA13E"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle4.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-24-426A" type="radio">
+                           <label class="product-card__color-choice-10" for="color-shop-24-426A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopF3ECE2" type="radio" checked />
+                           <label class="product-card__color-choice-11" for="color-shopF3ECE2"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-666689" type="radio">
+                           <label class="product-card__color-choice-12" for="color-shop-666689"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle5.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopB9FA7" type="radio">
+                           <label class="product-card__color-choice-13" for="color-shopB9FA7"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop971E34" type="radio" checked />
+                           <label class="product-card__color-choice-14" for="color-shop971E34"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-6666-89" type="radio">
+                           <label class="product-card__color-choice-15" for="color-shop-6666-89"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle6.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop66-6689" type="radio">
+                           <label class="product-card__color-choice-16" for="color-shop66-6689"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop292A2D" type="radio" checked />
+                           <label class="product-card__color-choice-17" for="color-shop292A2D"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-F3ECE2" type="radio">
+                           <label class="product-card__color-choice-18" for="color-shop-F3ECE2"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle7.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop88-ABCB" type="radio">
+                           <label class="product-card__color-choice-19" for="color-shop88-ABCB"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopFAC-BCE" type="radio" checked />
+                           <label class="product-card__color-choice-20" for="color-shopFAC-BCE"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopA75E-5D" type="radio">
+                           <label class="product-card__color-choice-21" for="color-shopA75E-5D"></label>
+
+                        </div>
+                     </form>
+                  </div>
+
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle8.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopF3-ECE2" type="radio">
+                           <label class="product-card__color-choice-22" for="color-shopF3-ECE2"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop292A2-D" type="radio" checked />
+                           <label class="product-card__color-choice-23" for="color-shop292A2-D"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-AAABA7" type="radio">
+                           <label class="product-card__color-choice-24" for="color-shop-AAABA7"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle9.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop2-4426A" type="radio">
+                           <label class="product-card__color-choice-25" for="color-shop2-4426A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop18-574A" type="radio" checked />
+                           <label class="product-card__color-choice-26" for="color-shop18-574A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop6666-89" type="radio">
+                           <label class="product-card__color-choice-27" for="color-shop6666-89"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle3.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop88-ABC-B" type="radio">
+                           <label class="product-card__color-choice-28" for="color-shop88-ABC-B"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopFACBC-E" type="radio" checked />
+                           <label class="product-card__color-choice-29" for="color-shopFACBC-E"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopA7-5E5D" type="radio">
+                           <label class="product-card__color-choice-30" for="color-shopA7-5E5D"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle6.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopC2BE-B6" type="radio">
+                           <label class="product-card__color-choice-31" for="color-shopC2BE-B6"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop2-44-26A" type="radio" checked />
+                           <label class="product-card__color-choice-32" for="color-shop2-44-26A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopCBA-13E" type="radio">
+                           <label class="product-card__color-choice-33" for="color-shopCBA-13E"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle2.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop244-26A" type="radio">
+                           <label class="product-card__color-choice-34" for="color-shop244-26A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopF3EC-E2" type="radio" checked />
+                           <label class="product-card__color-choice-35" for="color-shopF3EC-E2"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop66-66-89" type="radio">
+                           <label class="product-card__color-choice-36" for="color-shop66-66-89"></label>
+
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="baner-little">
+                  <div class="baner-little__flex">
+                     <div class="baner-little__blokc">
+
+                        <span class="baner-little__bold">shoping without limits.</span>
+
+                        <span class="baner-little__thin">You can choose the best option for you, and it does not
+                           matter
+                           whether
+                           you are in Prague or San Francisco. We will deliver your purchase anywhere!</span>
+
+                        <a class="btn-black" href="#">shop now</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="blokc-shop-list__flex-shop">
+
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle1.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop2-4426-A" type="radio">
+                           <label class="product-card__color-choice-1" for="color-shop2-4426-A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop1-857-4A" type="radio" checked />
+                           <label class="product-card__color-choice-2" for="color-shop1-857-4A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop666-68-9" type="radio">
+                           <label class="product-card__color-choice-3" for="color-shop666-68-9"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle2.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop88A-BCB" type="radio">
+                           <label class="product-card__color-choice-4" for="color-shop88A-BCB"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopF-AC-BCE" type="radio" checked />
+                           <label class="product-card__color-choice-5" for="color-shopF-AC-BCE"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopA75-E5D" type="radio">
+                           <label class="product-card__color-choice-6" for="color-shopA75-E5D"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle3.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopC-2BE-B6" type="radio">
+                           <label class="product-card__color-choice-7" for="color-shopC-2BE-B6"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-24-426-A" type="radio" checked />
+                           <label class="product-card__color-choice-8" for="color-shop-24-426-A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopCBA-13-E" type="radio">
+                           <label class="product-card__color-choice-9" for="color-shopCBA-13-E"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle4.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop2-44-26" type="radio">
+                           <label class="product-card__color-choice-10" for="color-shop2-44-26"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopF-3ECE-2" type="radio" checked />
+                           <label class="product-card__color-choice-11" for="color-shopF-3ECE-2"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-6-6668-9" type="radio">
+                           <label class="product-card__color-choice-12" for="color-shop-6-6668-9"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle5.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-BF-A-7" type="radio">
+                           <label class="product-card__color-choice-13" for="color-shop-BF-A-7"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop97-1-E3-4" type="radio" checked />
+                           <label class="product-card__color-choice-14" for="color-shop97-1-E3-4"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-66-6-6-89" type="radio">
+                           <label class="product-card__color-choice-15" for="color-shop-66-6-6-89"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle6.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop6-6-6689" type="radio">
+                           <label class="product-card__color-choice-16" for="color-shop6-6-6689"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop2-92A2-D" type="radio" checked />
+                           <label class="product-card__color-choice-17" for="color-shop2-92A2-D"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-F3EC-E2" type="radio">
+                           <label class="product-card__color-choice-18" for="color-shop-F3EC-E2"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle7.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop88-AB-CB" type="radio">
+                           <label class="product-card__color-choice-19" for="color-shop88-AB-CB"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopFAC-BC-E" type="radio" checked />
+                           <label class="product-card__color-choice-20" for="color-shopFAC-BC-E"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopA75E-5-D" type="radio">
+                           <label class="product-card__color-choice-21" for="color-shopA75E-5-D"></label>
+
+                        </div>
+                     </form>
+                  </div>
+
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle8.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopF3-E-CE2" type="radio">
+                           <label class="product-card__color-choice-22" for="color-shopF3-E-CE2"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop29-2A2-D" type="radio" checked />
+                           <label class="product-card__color-choice-23" for="color-shop29-2A2-D"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-AAABA-7" type="radio">
+                           <label class="product-card__color-choice-24" for="color-shop-AAABA-7"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle9.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop2-4-4-26A" type="radio">
+                           <label class="product-card__color-choice-25" for="color-shop2-4-4-26A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop18-5-74A" type="radio" checked />
+                           <label class="product-card__color-choice-26" for="color-shop18-5-74A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop6-666-89" type="radio">
+                           <label class="product-card__color-choice-27" for="color-shop6-666-89"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle3.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop8-8-ABC-B" type="radio">
+                           <label class="product-card__color-choice-28" for="color-shop8-8-ABC-B"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopFA-CBC-E" type="radio" checked />
+                           <label class="product-card__color-choice-29" for="color-shopFA-CBC-E"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopA7-5E5-D" type="radio">
+                           <label class="product-card__color-choice-30" for="color-shopA7-5E5-D"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle6.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopC-2B-E-B6" type="radio">
+                           <label class="product-card__color-choice-31" for="color-shopC-2B-E-B6"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop2-44-26-A" type="radio" checked />
+                           <label class="product-card__color-choice-32" for="color-shop2-44-26-A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopC-BA-13E" type="radio">
+                           <label class="product-card__color-choice-33" for="color-shopC-BA-13E"></label>
+
+                        </div>
+                     </form>
+                  </div>
+                  <div class="product-card">
+                     <div class="product-card__img">
+                        <img src="./img-shop/rectangle2.webp" alt="">
+                     </div>
+                     <a href="#" class="product-card__info">
+                        <span class="product-card__span-grey">TOP women</span>
+                        <span class="product-card__span-black">Angels malu zip jeans slim black used</span>
+                        <p class="product-card__text"> <span class="product-card__span-black-bold">139.00
+                              EUR</span>
+                           <span class="product-card__action"></span>
+                        </p>
+                     </a>
+                     <form class="product-card__form-color" action="">
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop-244-26-A" type="radio">
+                           <label class="product-card__color-choice-34" for="color-shop-244-26-A"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shopF3-E-C-E2" type="radio" checked />
+                           <label class="product-card__color-choice-35" for="color-shopF3-E-C-E2"></label>
+
+                        </div>
+                        <div class="product-card__radio">
+                           <input class="input-none" name="color" id="color-shop6-6-66-8-9" type="radio">
+                           <label class="product-card__color-choice-36" for="color-shop6-6-66-8-9"></label>
+
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+
+      </div>
+      <section class="blue">
+         <div class="blue__flex">
+            <span class="blue__info">Duties and Taxes Guaranteed</span>
+            <span class="blue__info">Free Express Shipping</span>
+            <span class="blue__info">Customer Love</span>
+            <span class="blue__info">Easy Returns</span>
+            <span class="blue__info">Secure Payment</span>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+
+      <div class="footer__flex conteiner">
+         <div class="logo__img">
+            <a href="#">
+               <img src="./img/logo.png" alt="">
+            </a>
+         </div>
+         <div class="block-footer-mob">
+            <input class="" type="checkbox" id="features">
+            <label class="desc label-footer" for="features">
+               <span class="desc">features</span>
+            </label>
+            <div class="label-footer__href-features">
+               <a class="input-href" href="#">men</a>
+               <a class="input-href" href="#">Women</a>
+               <a class="input-href" href="#">boys</a>
+               <a class="input-href" href="#">girls</a>
+               <a class="input-href" href="#">new arrivals</a>
+               <a class="input-href" href="#">shoes</a>
+               <a class="input-href" href="#">cothes</a>
+               <a class="input-href" href="#">accessories</a>
+            </div>
+
+            <input class="" type="checkbox" id="Menu">
+            <label class="desc label-footer" for="Menu">
+               <span class="desc">Menu</span>
+            </label>
+            <div class="label-footer__href-footer">
+               <a class="input-href" href="#">About us</a>
+               <a class="input-href" href="#">contact us</a>
+               <a class="input-href" href="#">my account</a>
+               <a class="input-href" href="#">orders history</a>
+               <a class="input-href" href="#">MY WISHLIST</a>
+               <a class="input-href" href="#">BLOG LOGIN</a>
+            </div>
+            <input class="" type="checkbox" id="contact">
+            <label class="desc label-footer" for="contact">
+               <span class="desc">contact us</span>
+            </label>
+            <div class="label-footer__href-contact">
+               <span class="">Address:</span>
+               <span class="">123 STREET NAME, CITY, ENGLAND</span>
+               <span class="">Phone:</span>
+               <span class="">(123) 456-7890</span>
+               <span class="">email:</span>
+               <span class="">MAIL@EXAMPLE.COM</span>
+               <span class="">working days/hours</span>
+               <span class="">MON - SUN / 9:00AM - 8:00PM</span>
+            </div>
+            <input class="" type="checkbox" id="follow">
+            <label class="desc label-footer" for="follow">
+               <span class="desc">follow</span>
+            </label>
+            <div class="label-footer__href-follow">
+               <a href="#"><img src="./icons/facebook.png" alt=""> <span>FACEBOOK</span></a>
+               <a href="#"><img src="./icons/twitter.png" alt=""> <span>TWITTER</span></a>
+               <a href="#"><img src="./icons/instagram.png" alt=""> <span>INSTAGRAM</span></a>
+            </div>
+            <div class="label-footer__href-email">
+               <span class="desc">join us</span>
+               <span class="block-input-mail__span">Subscribe to our newsletters</span>
+               <form class="block-input-mail__imput imput" action="#">
+                  <input class="imput__email" name="email" id="email" type="email" placeholder="Email Address">
+                  <!-- <input id="email-btn" for="email-btn" type="button"> -->
+                  <label for="email" class="imput__button-footer">Subscribe!</label>
+               </form>
+            </div>
+         </div>
+         <div class="footer__features-block features-block">
+            <span class="desc">features</span>
+            <a href="#">men</a>
+            <a href="#">Women</a>
+            <a href="#">boys</a>
+            <a href="#">girls</a>
+            <a href="#">new arrivals</a>
+            <a href="#">shoes</a>
+            <a href="#">cothes</a>
+            <a href="#">accessories</a>
+         </div>
+         <div class="footer__block-about block-about">
+            <span class="desc">Menu</span>
+            <a href="#">About us</a>
+            <a href="#">contact us</a>
+            <a href="#">my account</a>
+            <a href="#">orders history</a>
+            <a href="#">MY WISHLIST</a>
+            <a href="#">BLOG LOGIN</a>
+         </div>
+         <div class="footer__block-contact block-contact">
+            <span class="desc">contact us</span>
+            <span class="">Address:</span>
+            <span class="">123 STREET NAME, CITY, ENGLAND</span>
+            <span class="">Phone:</span>
+            <span class="">(123) 456-7890</span>
+            <span class="">email:</span>
+            <span class="">MAIL@EXAMPLE.COM</span>
+            <span class="">working days/hours</span>
+            <span class="">MON - SUN / 9:00AM - 8:00PM</span>
+         </div>
+         <div class="footer__block-follow block-follow">
+            <span class="desc">follow</span>
+            <a href="#"><img src="./icons/facebook.png" alt=""> <span>FACEBOOK</span></a>
+            <a href="#"><img src="./icons/twitter.png" alt=""> <span>TWITTER</span></a>
+            <a href="#"><img src="./icons/instagram.png" alt=""> <span>INSTAGRAM</span></a>
+         </div>
+         <div class="footer__block-input-mail block-input-mail">
+            <span class="desc">join us</span>
+            <span class="block-input-mail__span">Subscribe to our newsletters</span>
+            <form class="block-input-mail__imput imput" action="#">
+               <input class="imput__email" name="email" id="email" type="email" placeholder="Email Address">
+               <!-- <input id="email-btn" for="email-btn" type="button"> -->
+               <label for="email" class="imput__button-footer">Subscribe!</label>
+            </form>
+         </div>
+      </div>
+      <div class="footer__copyright copyright conteiner">
+         <span class="copyright__text">© 2019. Crisp theme Developed by Belvg</span>
+      </div>
+   </footer>
+   <script src="./input-min-js/nouislider.min.js"></script>
+   <script src="./input-min-js/reidge-slider.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+   <script src="./js/slick.min.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
