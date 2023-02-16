@@ -539,6 +539,11 @@ border: 1px solid #3F3F3F;
  .banner-big-blokc>:last-child{
   max-width: 30%;
  }
+ @media (max-width:750px) {
+  .banner-big-blokc>:last-child{
+    width: 100%;
+   }
+ }
  .banner-big-blokc::before{
   content:'';
   position: absolute;
